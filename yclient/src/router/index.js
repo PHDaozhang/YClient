@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
+const mainChildRoutes = [
+];
+
+const constantRoutes = [
+  {
+    path:"/",
+    component:()=>import("@/views/index/start"),
+    children:mainChildRoutes,
+  }
+]; 
+
+
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  mode:'history',
+  routes:constantRoutes
 })
