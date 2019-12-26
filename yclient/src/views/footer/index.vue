@@ -36,4 +36,7 @@ export default {
     .el-carousel-item {
         height:400px
      }
+    .div {
+        bottom: 0px;
+    }
 </style>

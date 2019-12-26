@@ -1,19 +1,16 @@
 <template>
     <div>
         <el-row>
-          <el-col :span="4">{{title}} |</el-col>
-          <el-col :span="20">
-              <el-row>
-                <el-col :span="6" >{{data[0].name}}</el-col>
-                <el-col :span="6" >{{data[1].name}}</el-col>
-                <el-col :span="6" >{{data[2].name}}</el-col>
-                <el-col :span="6" >{{data[3].name}}</el-col>
-              </el-row>
-              <el-row>
-                <el-col :span="6" >{{data[4].name}}</el-col>
-                <el-col :span="6" >{{data[5].name}}</el-col>
-                <el-col :span="6" >{{data[6].name}}</el-col>
-                <el-col :span="6" >{{data[7].name}}</el-col>
+          <el-col :span="4" >
+            <h5>{{title}} <el-divider direction="vertical" ></el-divider> </h5>
+            
+          </el-col>
+          <el-col :span="20" class="link">
+              <el-row  >
+                <el-col  :span="6" v-for="item in data" :key="item.name">
+                  <el-link>{{item.name}}</el-link>
+                </el-col>
+                <el-divider></el-divider>
               </el-row>
           </el-col>
         </el-row>
@@ -34,10 +31,9 @@ export default {
 </script>
 
 <style scoped>
-/* .el-table {
-    top: 0px;
-    left: 100px;
-    margin: 20px;
-} */
+.link {
+  border-style: solid;
+  border-color: brown;
+}
 
 </style>

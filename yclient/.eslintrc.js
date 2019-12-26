@@ -43,5 +43,6 @@ module.exports = {
     'spaced-comment':'off',
     'no-trailing-spaces':'off',
     'no-trailing-spaces':'off',
+    'require-valid-default-prop':'off',
   }
 }

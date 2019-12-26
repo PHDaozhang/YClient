@@ -7,22 +7,20 @@
         </el-carousel>
 
         <div>
-            <!--
-            <header-item v-for="item in headerlist" :key="item"></header-item>
-            -->
             <el-row v-for="item in headerList" :key="item.title" >
               <el-col :span="24">
                   <header-item :title="item.title" :data="item.data" ></header-item>
               </el-col>
             </el-row>
         </div>
-
+        <br>
+        
         <el-carousel :interval="2000" arrow="always">
           <el-carousel-item v-for="item in cards" :key="item">
             <el-image style="height:320" :src="require('@/assets/poker/poker'+item+'.png')"></el-image>
           </el-carousel-item>
         </el-carousel>
-
+        
     </div>
 
 </template>

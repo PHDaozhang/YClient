@@ -5,7 +5,9 @@
                 <w-header></w-header>
             </el-header>
             <el-main>
-                <router-view></router-view>
+                <div id="content" >
+                    <router-view></router-view>
+                </div>
             </el-main>
             <el-footer>
                 <w-footer></w-footer>
@@ -30,7 +32,7 @@ export default {
 <style scoped>
 .el-container 
 {
-    height: 2000px;
+    height: 4000px;
 }
 .el-header
 {
@@ -39,12 +41,16 @@ export default {
 }
 .el-footer
 {
-    height: 15%;
+    bottom: 0%;
 }
 .el-main 
 {
     position: relative;
     top:15%;
     height: 70%;
+}
+#content {
+    position: relative;
+    top: 300px;
 }
 </style>
