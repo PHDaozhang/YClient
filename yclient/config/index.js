@@ -14,17 +14,20 @@ module.exports = {
     //vue-cli 使用这个功能是借助 http-proxy-middleware 插件，一般解决跨域请求api
     proxyTable: {
       '/api':{
-        target:"http://127.0.0.1:8083",
+        target:"http://10.1.3.71:8087",
         changeOrigin:true,
+        pathRewrite:{
+          "^/apis":"/api"
+        }
       }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8088, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    autoOpenBrowser: true,
     errorOverlay: true,
-    notifyOnErrors: true,
+    notifyOnErrors: false,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
     // Use Eslint Loader?

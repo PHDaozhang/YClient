@@ -1,8 +1,8 @@
 <template>
     <div>
         <el-carousel :interval="2000" arrow="always">
-          <el-carousel-item v-for="item in items" :key="item">
-            <el-image style="height:320" :src="require('@/assets/poker/poker'+item+'.png')"></el-image>
+          <el-carousel-item v-for="item in cards" :key="item.Id">
+           <img :src="imgUrl(item.Address)" />
           </el-carousel-item>
         </el-carousel>
         <h6>警告：如果您未满18周岁，或未满足当前法律规定的，没有许可不能进入此游戏</h6>
@@ -10,17 +10,31 @@
 </template>
 
 <script>
+    import {getAdList} from "@/api/ad/ad"
+
 export default {
       name:"wFooter",
       data() {
-          var items = [];
-          for(var i = 0; i < 14; i++)
-          {
-              items.push(i);
-          }
           return {
-              items:items,
+              cards:[]
           };
+      },
+      created() {
+             this.getUPCardsAdList();
+      },
+      methods:{
+           getUPCardsAdList() {
+              getAdList(3,{offset:0,count:4})
+              .then(response => {
+                  this.cards = response.data.Data;
+              })
+              .catch(err=>{
+
+              })
+          },
+          imgUrl(url) {
+              return require(  "@/assets/" + url  ); 
+          }
       }
 }
 </script>

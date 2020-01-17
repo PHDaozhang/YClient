@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import * as filters from './filters'
+import common from './utils/common'
 
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -14,6 +15,8 @@ import i18n from './lang'
 
 Vue.config.productionTip = false
 Vue.prototype.$md5 = md5
+
+Vue.use(common)
 
 Vue.use( Element,{
   i18n:(key,value)=>i18n.t(key,value)

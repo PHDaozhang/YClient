@@ -2,12 +2,12 @@
     <div>
          <h2 class="text">{{title}}</h2>
             <el-row>
-                <el-col :span="12" v-for="o in dataList" :key="o.id">
-                    <el-link @click="clickHandler">
+                <el-col :span="12" v-for="item in dataList" :key="item.Id">
+                    <el-link @click="clickHandler(item.Id)">
                         <el-card shadow="hover" >
-                            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" />
+                            <img :src="GetAssetImg(item.Address)" />
                             <div>
-                                <h5>我就是一个测试内容</h5>
+                                <h5>{{item.Title}}</h5>
                             </div>
                         </el-card>
                     </el-link>
@@ -35,6 +35,7 @@ export default {
     methods:{
         clickHandler() { 
             console.log("......");
+            console.log(this.dataList[0]);
         }
     }
 }

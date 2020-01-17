@@ -9,15 +9,23 @@ const mainChildRoutes = [
     component:()=>import("@/views/main/index.vue")
   },
   {
-    path:"m*/:id",
+    path:"movie/:id",
     component:()=>import('@/views/main/movie/index.vue'),
-     },
+  },
   {
-    path:"n*/:id",
+    path:"video/:id",
+    component:()=>import('@/views/main/movie/index.vue'),
+  },
+  {
+    path:"novel/:id",
     component:()=>import('@/views/main/novel/index.vue'),
   },
   {
-    path:"p*/:id",
+    path:"pic/:id",
+    component:()=>import('@/views/main/pic/index.vue'),
+  },
+  {
+    path:"game/:id",
     component:()=>import('@/views/main/pic/index.vue'),
   }
 ];

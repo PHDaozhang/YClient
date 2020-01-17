@@ -44,5 +44,10 @@ module.exports = {
     'no-trailing-spaces':'off',
     'no-trailing-spaces':'off',
     'require-valid-default-prop':'off',
+    'handle-callback-err':'off',
+    'no-multi-spaces':'off',
+    'padded-blocks':'off',
+    'no-unused-vars':'off',
+    'space-before-blocks':'off'
   }
 }

@@ -8,10 +8,13 @@
           <el-col :span="20" class="link">
               <el-row  >
                 <el-col  :span="6" v-for="item in data" :key="item.name">
-                  <el-link>{{item.name}}</el-link>
+                  <!---->
+                  <router-link :to="getRouterLink(item)">
+                    <el-link>{{item.name}}</el-link>
+                  </router-link>
                 </el-col>
                 <el-divider></el-divider>
-              </el-row>
+              </el-row>  
           </el-col>
         </el-row>
     </div>
@@ -22,13 +25,21 @@ export default {
     name:"headerItem",
     props:{
         title:String,
+        type:Number,
+        name:String,
         data:Array
     },
     created() {
-
+        
+    },
+    methods:{
+      getRouterLink(item) {
+        var path = "/" + this.name + "/" + item.childType;
+        return {path:path};
+      }
     }
 }
-</script>
+</script> 
 
 <style scoped>
 .link {

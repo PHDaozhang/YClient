@@ -3,194 +3,77 @@
     [
         {
             "title":"title1",
+            "type":1,
+            "name":"video",
             "data":[
-                {
-                    "name":"name1",
-                    "path":"path1",
-                    "component":"abcdef",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name2",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name3",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name4",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name5",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name6",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name7",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name8",
-                    "link":"http://www.baidu.com"
-                }
-                
+                {"name":"name1","childType":1},
+                {"name":"name2","childType":2},
+                {"name":"name3","childType":3},
+                {"name":"name4","childType":4},
+                {"name":"name5","childType":5},
+                {"name":"name6","childType":6},
+                {"name":"name7","childType":7},
+                {"name":"name8","childType":8}
             ]
         },
         {
             "title":"title2",
+            "type":2,
+            "name":"movie",
             "data":[
-                {
-                    "name":"name1",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name2",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name3",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name4",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name5",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name6",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name7",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name8",
-                    "link":"http://www.baidu.com"
-                }
-                
+                {"name":"name1","childType":1},
+                {"name":"name2","childType":2},
+                {"name":"name3","childType":3},
+                {"name":"name4","childType":4},
+                {"name":"name5","childType":5},
+                {"name":"name6","childType":6},
+                {"name":"name7","childType":7},
+                {"name":"name8","childType":8}
             ]
         },
         {
             "title":"title3",
+            "type":3,
+            "name":"pic",
             "data":[
-                {
-                    "name":"name1",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name2",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name3",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name4",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name5",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name6",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name7",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name8",
-                    "link":"http://www.baidu.com"
-                }
-                
+                {"name":"name1","childType":1},
+                {"name":"name2","childType":2},
+                {"name":"name3","childType":3},
+                {"name":"name4","childType":4},
+                {"name":"name5","childType":5},
+                {"name":"name6","childType":6},
+                {"name":"name7","childType":7},
+                {"name":"name8","childType":8}
             ]
         },
         {
             "title":"title4",
+            "type":4,
+            "name":"novel",
             "data":[
-                {
-                    "name":"name1",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name2",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name3",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name4",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name5",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name6",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name7",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name8",
-                    "link":"http://www.baidu.com"
-                }
-                
+                {"name":"name1","childType":1},
+                {"name":"name2","childType":2},
+                {"name":"name3","childType":3},
+                {"name":"name4","childType":4},
+                {"name":"name5","childType":5},
+                {"name":"name6","childType":6},
+                {"name":"name7","childType":7},
+                {"name":"name8","childType":8}
             ]
         },
         {
             "title":"title5",
+            "type":5,
+            "name":"game",
             "data":[
-                {
-                    "name":"name1",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name2",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name3",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name4",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name5",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name6",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name7",
-                    "link":"http://www.baidu.com"
-                },
-                {
-                    "name":"name8",
-                    "link":"http://www.baidu.com"
-                }
-                
+                {"name":"name1","childType":1},
+                {"name":"name2","childType":2},
+                {"name":"name3","childType":3},
+                {"name":"name4","childType":4},
+                {"name":"name5","childType":5},
+                {"name":"name6","childType":6},
+                {"name":"name7","childType":7},
+                {"name":"name8","childType":8}
             ]
         }
     ]

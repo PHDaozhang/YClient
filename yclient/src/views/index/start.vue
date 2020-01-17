@@ -1,6 +1,7 @@
 <template>
     <div>
         <el-container >
+            
             <el-header>
                 <w-header></w-header>
             </el-header>
@@ -25,6 +26,13 @@ import wHeader from "@/views/header";
 export default {
     name:"wStart",    
     components:{wFooter,wHeader},
+
+    created() {
+
+    },
+    methods:{
+
+    }
 }
 </script>
 
