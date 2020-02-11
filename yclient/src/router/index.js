@@ -9,10 +9,12 @@ const mainChildRoutes = [
     component:()=>import("@/views/main/index.vue")
   },
   {
+    name:"movieIndex",
     path:"movie/:id",
     component:()=>import('@/views/main/movie/index.vue'),
   },
   {
+    name:"videoIndex",
     path:"video/:id",
     component:()=>import('@/views/main/movie/index.vue'),
   },
@@ -27,6 +29,18 @@ const mainChildRoutes = [
   {
     path:"game/:id",
     component:()=>import('@/views/main/pic/index.vue'),
+  },
+  {
+    path:"picDetial/:id",
+    component:()=>import('@/views/main/pic/detail.vue'),
+  },
+  {
+    path:"NovelDetial/:id",
+    component:()=>import('@/views/main/novel/detail.vue'),
+  },
+  {
+    path:"movieDetial/:id",
+    component:()=>import('@/views/main/movie/detail.vue'),
   }
 ];
 

@@ -2,7 +2,10 @@
     <div>
         <el-carousel :interval="2000" arrow="always">
           <el-carousel-item v-for="item in upCards" :key="item.Id">
-            <img :src="imgUrl(item.Address)" />
+              <div v-if="item.Address">
+                  <img :src="imgUrl(item.Address)" v-show="item.Address"  />
+              </div>
+            <!--<img :src="imgUrl(item.Address)" v-show="item.Address"  />-->
           </el-carousel-item>
         </el-carousel>
 
@@ -17,7 +20,9 @@
        
         <el-carousel :interval="2000" arrow="always">
           <el-carousel-item v-for="item in downCards" :key="item.Id">
-            <img :src="imgUrl(item.Address)" />
+              <div v-if="item.Address">
+                <img :src="imgUrl(item.Address)" v-show="item.Address" />
+              </div>
           </el-carousel-item>
         </el-carousel>
         

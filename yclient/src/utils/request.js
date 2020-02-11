@@ -13,6 +13,9 @@ const service = axios.create({
       for (const it in data) {
         ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
       }
+
+      ret = ret.substring(0,ret.length - 1);
+      console.log( ret );
       return ret
     }
   ]

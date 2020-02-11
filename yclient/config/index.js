@@ -14,7 +14,8 @@ module.exports = {
     //vue-cli 使用这个功能是借助 http-proxy-middleware 插件，一般解决跨域请求api
     proxyTable: {
       '/api':{
-        target:"http://10.1.3.71:8087",
+        //target:"http://10.1.3.71:8087",
+        target:"http://127.0.0.1:8087",         //本地
         changeOrigin:true,
         pathRewrite:{
           "^/apis":"/api"

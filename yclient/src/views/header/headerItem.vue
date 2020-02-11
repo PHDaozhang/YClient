@@ -34,7 +34,8 @@ export default {
     },
     methods:{
       getRouterLink(item) {
-        var path = "/" + this.name + "/" + item.childType;
+        var path;
+        path = "/" + this.name + "/" + item.childType;
         return {path:path};
       }
     }

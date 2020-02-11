@@ -2,7 +2,9 @@
     <div>
         <el-carousel :interval="2000" arrow="always">
           <el-carousel-item v-for="item in cards" :key="item.Id">
-           <img :src="imgUrl(item.Address)" />
+              <div v-if="item.Address">
+                  <img :src="imgUrl(item.Address)" />
+              </div>
           </el-carousel-item>
         </el-carousel>
         <h6>警告：如果您未满18周岁，或未满足当前法律规定的，没有许可不能进入此游戏</h6>

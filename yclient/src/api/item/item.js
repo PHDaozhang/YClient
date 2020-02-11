@@ -6,6 +6,15 @@ export function getItemList(tp,childTp,data)
     return request({
         url:"/item/" + tp + "/" + childTp,
         method:"get",
-        data
+        params:data
+    });
+}
+
+export function getItem(data)
+{
+    return request({
+        url:"/item",
+        method:"get",
+        params:data
     });
 }
